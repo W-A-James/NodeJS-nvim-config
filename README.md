@@ -1,4 +1,4 @@
-# nvim_lua_setup
+# Node.js neovim configuration
 
 ## Setup
 
