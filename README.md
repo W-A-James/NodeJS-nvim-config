@@ -1,6 +1,18 @@
 # nvim_lua_setup
 
-## Layout
+## Setup
+
+Requires nvim >= v0.10.0
+
+- Fork this repository (I make changes to this frequently, so do not treat this as a stable repository)
+- Install [neovim](git@github.com:neovim/neovim.git) and locate the install directory. On Unix systems this should be at `~/.config/nvim`
+- Install [lua](https://www.lua.org/download.html) and ensure the lua binary is in your system `$PATH`
+- Clone your fork as follows `git clone <fork url> ~/.config/nvim`. This will replace your neovim configuration, so back up those settings if you would like to return to them
+- It's not required to install packer separately as this config bootstraps it for you
+- Open `nvim` and run `:PackerInstall` to install plugins
+- Refer to [nvim-lspconfig's language server configurations document](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md) to install desired language servers
+
+## Repository Layout
 
 ### `init.lua`
 
@@ -59,14 +71,4 @@ Theme configuration.
 ### `lua/config/utils.lua`
 
 Shared utility functions.
-
-## Basic Setup
-
-- Fork this repository (I make changes to this frequently, so do not treat this as a stable repository)
-- Install [neovim](git@github.com:neovim/neovim.git) and locate the install directory. On Unix systems this should be at `~/.config/nvim`
-- Install [lua](https://www.lua.org/download.html) and ensure the lua binary is in your system `$PATH`
-- Clone this repository as follows `git clone https://github.com/W-A-James/NodeJS-nvim-config ~/.config/nvim`. This will replace your neovim configuration, so save those settings if you would like to return to them
-- It's not required to install packer separately as this config bootstraps it for you
-- Open `nvim` and run `:PackerInstall` to install plugins
-- Refer to [nvim-lspconfig's language server configurations document](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md) to install desired language servers
 
