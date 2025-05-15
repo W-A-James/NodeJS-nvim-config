@@ -8,15 +8,57 @@ Contains preferences and theme setup as well as some useful autocommands tailore
 
 ### `lua/plugins.lua`
 
-Uses [packer](https://github.com/wbthomason/packer.nvim) to install plugins
+Uses [packer](https://github.com/wbthomason/packer.nvim) to install plugins and conditionally 
+bootstraps the packer installation.
 
-### `lua/lsp.lua`
+### `lua/dap`
+
+Contains configuration for debugging capabilities via the [Debug Adapter
+Protocol](https://github.com/mfussenegger/nvim-dap).
+
+### `lua/luasnip`
+
+Contains snippet configuration.
+
+### `lua/nvim-tree`
+
+Contains configuration for [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua).
+
+### `lua/orgmode`
+
+Contains confguration for [nvim-orgmode](https://github.com/nvim-orgmode/orgmode).
+
+### `lua/treesitter`
+
+Contains treesitter configuration.
+
+### `lua/lsp`
 
 Sets up language servers and mappings for code suggestions and completion
 
-### `lua/completion.lua`
+### `lua/lsp`
+
+Sets up language servers and mappings for code suggestions and completion
+
+### `lua/config/completion.lua`
 
 Sets up autocompletion sources with [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+
+### `lua/config/editor.lua`
+
+Contains basic vim option configuration.
+
+### `lua/config/keymap.lua`
+
+Contains keymap configuration.
+
+### `lua/config/theme.lua`
+
+Theme configuration.
+
+### `lua/config/utils.lua`
+
+Shared utility functions.
 
 ## Basic Setup
 
